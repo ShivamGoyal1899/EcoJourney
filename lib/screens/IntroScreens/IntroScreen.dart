@@ -1,5 +1,5 @@
+import '../AuthenticationScreens/LoginScreen.dart';
 import 'package:flutter/material.dart';
-import '../../screens/AppBar/CustomAppBar.dart';
 import 'package:intro_slider/intro_slider.dart';
 import 'package:intro_slider/slide_object.dart';
 import 'package:intro_slider/dot_animation_enum.dart';
@@ -65,6 +65,9 @@ class _IntroSliderScreenState extends State<IntroSliderScreen> {
 
   void onDonePress() {
     // Back to the first tab
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (context) => LoginScreen()),
+    );
   }
 
   void onTabChangeCompleted(index) {
