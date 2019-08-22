@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "894781559238",
+    "firebase_url": "https://ecojourney-ab5a0.firebaseio.com",
+    "project_id": "ecojourney-ab5a0",
+    "storage_bucket": "ecojourney-ab5a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894781559238:android:f4e7f7e2dd00697e",
+        "android_client_info": {
+          "package_name": "co.shivamgoyal.ecojourney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894781559238-b9jtpvc967s2tqmvq18rj9o6dn5ahm51.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.shivamgoyal.ecojourney",
+            "certificate_hash": "2895557b43228ec2a0650d18f9d5d60b71545129"
+          }
+        },
+        {
+          "client_id": "894781559238-pafbo5m42jt5u6p3jem6a7kr42esvpc0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7STDFZuCa6p2vS8WQ1bA3Buy0kRMJi1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894781559238-pafbo5m42jt5u6p3jem6a7kr42esvpc0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

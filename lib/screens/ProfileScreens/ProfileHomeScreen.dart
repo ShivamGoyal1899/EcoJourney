@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../main.dart';
+import '../AppDrawer.dart';
 
 class ProfileHomeScreen extends StatefulWidget {
   @override
@@ -92,7 +93,10 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
               children: <Widget>[
                 Text(
                   "426.0",
-                  style: TextStyle(fontSize: 24.0, color: Color(0xFF6ce75c), fontWeight: FontWeight.w500),
+                  style: TextStyle(
+                      fontSize: 24.0,
+                      color: Color(0xFF6ce75c),
+                      fontWeight: FontWeight.w500),
                 ),
               ],
             ),

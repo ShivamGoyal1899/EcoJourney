@@ -2,6 +2,10 @@ import '../TravelFlowScreens/TravelHomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../main.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+
+import 'GoogleAuthMethods.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -24,13 +28,19 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 60.0, vertical: 40.0),
           child: RaisedButton(
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0)),
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(50.0)),
             elevation: 4.0,
             onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => TravelHomeScreen()),
-              );
+              signInWithGoogle().whenComplete(() {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return TravelHomeScreen();
+                    },
+                  ),
+                );
+              });
             },
             child: Container(
               alignment: Alignment.center,
