@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'AuthenticationScreens/LoginScreen.dart';
 import 'AuthenticationScreens/GoogleFacebookAuthMethods.dart';
 import 'ProfileScreens/ProfileHomeScreen.dart';
-import 'SettingScreens/SettingHomeScreen.dart';
+import 'SafeMode/SafeModeScreen.dart';
 import 'TravelFlowScreens/TravelHomeScreen.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -48,20 +48,11 @@ class MyDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.person),
-            title: Text("Your Profile"),
+            title: Text("Profile & Settings"),
             onTap: () {
               Navigator.pop(context);
               Navigator.of(context).push(MaterialPageRoute(
                   builder: (BuildContext context) => ProfileHomeScreen()));
-            },
-          ),
-          ListTile(
-            leading: Icon(Icons.history),
-            title: Text("Travel History"),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (BuildContext context) => SettingsScreen()));
             },
           ),
           ListTile(
@@ -70,7 +61,15 @@ class MyDrawer extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
               Navigator.of(context).push(MaterialPageRoute(
-                  builder: (BuildContext context) => SettingsScreen()));
+                  builder: (BuildContext context) => ProfileHomeScreen()));
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.security),
+            title: Text("Safe Mode"),
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) => SafeModeScreen()));
             },
           ),
           ListTile(
@@ -93,7 +92,7 @@ class MyDrawer extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
               Navigator.of(context).push(MaterialPageRoute(
-                  builder: (BuildContext context) => SettingsScreen()));
+                  builder: (BuildContext context) => ProfileHomeScreen()));
             },
           ),
           ListTile(
