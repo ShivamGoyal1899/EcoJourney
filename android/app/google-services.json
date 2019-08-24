@@ -15,6 +15,30 @@
       },
       "oauth_client": [
         {
+          "client_id": "894781559238-mgk5517ljtvknmjin93l9bv03p754of2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.shivamgoyal.ecojourney",
+            "certificate_hash": "26cfd5e07149687120aeba44ea155ca89cf3f443"
+          }
+        },
+        {
+          "client_id": "894781559238-p0v8ir4ef0jo49a204nau1e74fufbi9b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.shivamgoyal.ecojourney",
+            "certificate_hash": "d190d3c1441207afd6c83d79412e803b1b2f42f4"
+          }
+        },
+        {
+          "client_id": "894781559238-9nvjlidj1lfnb7metm68dkh04omf8udr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.shivamgoyal.ecojourney",
+            "certificate_hash": "1c69a7c792948c330d69409cf31aa415071d04cb"
+          }
+        },
+        {
           "client_id": "894781559238-b9jtpvc967s2tqmvq18rj9o6dn5ahm51.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

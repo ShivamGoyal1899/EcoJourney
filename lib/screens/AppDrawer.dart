@@ -1,11 +1,25 @@
-import 'package:EcoJourney/screens/AuthenticationScreens/LoginScreen.dart';
 import 'package:flutter/material.dart';
-import 'AuthenticationScreens/GoogleAuthMethods.dart';
+import 'AuthenticationScreens/LoginScreen.dart';
+import 'AuthenticationScreens/GoogleFacebookAuthMethods.dart';
 import 'ProfileScreens/ProfileHomeScreen.dart';
 import 'SettingScreens/SettingHomeScreen.dart';
 import 'TravelFlowScreens/TravelHomeScreen.dart';
 
 class MyDrawer extends StatelessWidget {
+  showAlertDialog(BuildContext context) {
+    AlertDialog alert = AlertDialog(
+      title: Text("About EcoJourney"),
+      content: Text(
+          "This app is designed & developed by Team RuntimeTerror in NEC Hackathon: Transport held on 24th & 25th August 2019 in Gurugram, India."),
+    );
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return alert;
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -15,12 +29,10 @@ class MyDrawer extends StatelessWidget {
         children: <Widget>[
           UserAccountsDrawerHeader(
             decoration: BoxDecoration(color: Colors.black),
-            accountName: Text(name == null ? "Shivam Goyal" : name),
-            accountEmail: Text(email == null ? "shivamgoyal.co" : email),
+            accountName: Text(name),
+            accountEmail: Text(email),
             currentAccountPicture: CircleAvatar(
-              backgroundImage: NetworkImage(imageUrl == null
-                  ? "https://avatars3.githubusercontent.com/u/25903939?s=400&v=4"
-                  : imageUrl),
+              backgroundImage: NetworkImage(imageUrl),
               backgroundColor: Colors.transparent,
             ),
             otherAccountsPictures: <Widget>[],
@@ -67,6 +79,7 @@ class MyDrawer extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
               signOutGoogle();
+              facebookLogin.logOut();
               Navigator.of(context).push(MaterialPageRoute(
                 builder: (context) {
                   return LoginScreen();
@@ -85,11 +98,10 @@ class MyDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.info_outline),
-            title: Text("About Us"),
+            title: Text("About EcoJourney"),
             onTap: () {
               Navigator.pop(context);
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (BuildContext context) => SettingsScreen()));
+              showAlertDialog(context);
             },
           ),
         ],

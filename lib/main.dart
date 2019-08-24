@@ -1,12 +1,6 @@
-import 'screens/TravelFlowScreens/TravelHomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'dart:async';
-import 'screens/AuthenticationScreens/GoogleAuthMethods.dart';
 import 'screens/IntroScreens/IntroScreen.dart';
-import 'screens/ProfileScreens/ProfileHomeScreen.dart';
-import 'screens/SettingScreens/SettingHomeScreen.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 
 void main() {
   SystemChrome.setPreferredOrientations(

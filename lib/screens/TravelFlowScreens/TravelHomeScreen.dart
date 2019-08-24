@@ -23,16 +23,16 @@ class _TravelHomeScreenState extends State<TravelHomeScreen> {
         iconTheme: new IconThemeData(color: Colors.black),
         actions: <Widget>[
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 8.0),
+            padding: EdgeInsets.only(right: 15.0),
             alignment: Alignment.center,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                Text("426.0",
+                Text("426",
                     style: TextStyle(
                         color: Color(0xFF6ce75c),
-                        fontSize: 18.0,
+                        fontSize: 20.0,
                         fontWeight: FontWeight.w700)),
                 Text("Points",
                     style: TextStyle(color: Colors.black, fontSize: 12.0))

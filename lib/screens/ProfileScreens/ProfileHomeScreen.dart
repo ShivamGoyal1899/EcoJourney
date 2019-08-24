@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../../main.dart';
 import '../AppDrawer.dart';
+import '../AuthenticationScreens/GoogleFacebookAuthMethods.dart';
 
 class ProfileHomeScreen extends StatefulWidget {
   @override
@@ -16,6 +16,7 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       drawer: MyDrawer(),
       appBar: AppBar(
 //        automaticallyImplyLeading: false,
@@ -24,19 +25,18 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
         centerTitle: true,
         title: MyTitle(),
         iconTheme: new IconThemeData(color: Colors.black),
-
         actions: <Widget>[
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 8.0),
+            padding: EdgeInsets.only(right: 15.0),
             alignment: Alignment.center,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                Text("426.0",
+                Text("426",
                     style: TextStyle(
                         color: Color(0xFF6ce75c),
-                        fontSize: 18.0,
+                        fontSize: 20.0,
                         fontWeight: FontWeight.w700)),
                 Text("Points",
                     style: TextStyle(color: Colors.black, fontSize: 12.0))
@@ -54,8 +54,7 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
             child: CircleAvatar(
               foregroundColor: Theme.of(context).primaryColor,
               backgroundColor: Colors.grey,
-              backgroundImage: NetworkImage(
-                  "https://avatars3.githubusercontent.com/u/25903939?s=400&v=4"),
+              backgroundImage: NetworkImage(imageUrl),
               radius: 60.0,
             ),
           ),
@@ -63,7 +62,7 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
             child: Column(
               children: <Widget>[
                 Text(
-                  "Shivam Goyal",
+                  name,
                   style: TextStyle(
                     fontSize: 36.0,
                     fontWeight: FontWeight.w500,
@@ -72,7 +71,7 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
                 ),
                 SizedBox(height: 2.0),
                 Text(
-                  "hi@shivamgoyal.co",
+                  email,
                   style: TextStyle(fontSize: 16.0, color: Color(0xFF6ce75c)),
                 )
               ],
@@ -92,7 +91,7 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 Text(
-                  "426.0",
+                  "426",
                   style: TextStyle(
                       fontSize: 24.0,
                       color: Color(0xFF6ce75c),
@@ -187,7 +186,7 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
                     Icons.arrow_forward_ios,
                     color: Colors.black,
                     size: 16.0,
-                  ),
+                  ), onPressed: () {},
                 ),
               ],
             ),
@@ -220,7 +219,7 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
                     Icons.arrow_forward_ios,
                     color: Colors.black,
                     size: 16.0,
-                  ),
+                  ), onPressed: () {},
                 ),
               ],
             ),
@@ -246,7 +245,7 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
                 Icons.arrow_forward_ios,
                 color: Colors.black,
                 size: 16.0,
-              ),
+              ), onPressed: () {},
             ),
             onTap: () {},
           ),
