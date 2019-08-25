@@ -19,6 +19,11 @@ dependencies:
   flutter_facebook_login: ^2.0.1
   http: ^0.12.0+2
   autocomplete_textfield: ^1.7.3
+  flutter_html: ^0.10.4
+  material_design_icons_flutter: 3.2.4096
+  camera:
+  path_provider:
+  path:
 
 dev_dependencies:
   flutter_test:

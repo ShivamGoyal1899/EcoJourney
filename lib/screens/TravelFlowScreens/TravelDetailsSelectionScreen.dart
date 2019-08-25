@@ -1,7 +1,9 @@
+import 'package:EcoJourney/screens/TravelFlowScreens/TripStartEndScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:autocomplete_textfield/autocomplete_textfield.dart';
 import '../../main.dart';
 import '../AppDrawer.dart';
+import 'package:flutter/cupertino.dart';
 
 class TravelDetailsSelectionScreen extends StatefulWidget {
   @override
@@ -29,6 +31,21 @@ class _TravelDetailsSelectionScreenState
 //    super.initState();
 //  }
   final _inputKey = GlobalKey(debugLabel: 'inputText');
+  FocusNode myFocusNode;
+
+  void dispose() {
+    // Clean up the focus node when the Form is disposed.
+    myFocusNode.dispose();
+
+    super.dispose();
+  }
+
+  bool _lights = true;
+  bool _lights1 = false;
+
+  bool monVal = false;
+  bool tuVal = false;
+  bool wedVal = false;
 
   @override
   Widget build(BuildContext context) {
@@ -197,7 +214,85 @@ class _TravelDetailsSelectionScreenState
 //          ),
 //        ],
 //      ),
-      body: Container(),
+      body: SingleChildScrollView(
+        child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 50.0),
+            child: Column(children: [
+              SizedBox(height: 20.0),
+              TextField(
+                autofocus: true,
+                decoration: InputDecoration(hintText: "From:"),
+              ),
+              TextField(
+                  focusNode: myFocusNode,
+                  decoration: InputDecoration(hintText: "To:")),
+              SizedBox(height: 30.0),
+              ListTile(
+                contentPadding:
+                    EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
+                title: Text(
+                  "Is this Your ofiice Adress?",
+                  style: TextStyle(fontSize: 16.0, color: Colors.black),
+                ),
+                trailing: CupertinoSwitch(
+                  value: _lights,
+                  onChanged: (bool value) {
+                    setState(() {
+                      _lights = value;
+                    });
+                  },
+                ),
+                onTap: () {
+                  setState(() {
+                    _lights = !_lights;
+                  });
+                },
+              ),
+              SizedBox(
+                height: 10.0,
+              ),
+              Column(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  const SizedBox(height: 30),
+                  RaisedButton(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50.0)),
+                    elevation: 4.0,
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                            builder: (context) => TripStartEndScreen()),
+                      );
+                    },
+                    child: Container(
+                      alignment: Alignment.center,
+                      height: 50.0,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Icon(
+                            Icons.check_circle_outline,
+                            size: 18.0,
+                            color: Colors.white,
+                          ),
+                          Text(
+                            "  View Route",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    color: Colors.red,
+                  ),
+                ],
+              ),
+            ])),
+      ),
     );
   }
 }

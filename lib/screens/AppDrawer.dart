@@ -3,6 +3,7 @@ import 'AuthenticationScreens/LoginScreen.dart';
 import 'AuthenticationScreens/GoogleFacebookAuthMethods.dart';
 import 'ProfileScreens/ProfileHomeScreen.dart';
 import 'SafeMode/SafeModeScreen.dart';
+import 'TravelFlowScreens/AutoRegistration.dart';
 import 'TravelFlowScreens/TravelHomeScreen.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -66,7 +67,7 @@ class MyDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.security),
-            title: Text("Safe Mode"),
+            title: Text("Sixth Sense"),
             onTap: () {
               Navigator.of(context).push(MaterialPageRoute(
                   builder: (BuildContext context) => SafeModeScreen()));
@@ -87,12 +88,12 @@ class MyDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.settings),
-            title: Text("Settings"),
+            leading: Icon(Icons.assignment_ind),
+            title: Text("Rickshaw Registration"),
             onTap: () {
               Navigator.pop(context);
               Navigator.of(context).push(MaterialPageRoute(
-                  builder: (BuildContext context) => ProfileHomeScreen()));
+                  builder: (BuildContext context) => AutoRegistration()));
             },
           ),
           ListTile(

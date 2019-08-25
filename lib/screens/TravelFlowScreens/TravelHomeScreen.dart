@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../main.dart';
 import '../AppDrawer.dart';
 import 'TravelDetailsSelectionScreen.dart';
+import 'TripStartEndScreen.dart';
 
 class TravelHomeScreen extends StatefulWidget {
   @override
@@ -78,7 +79,7 @@ class _TravelHomeScreenState extends State<TravelHomeScreen> {
             ),
             ActionCard(
               icon: Icons.train,
-              color: Colors.green,
+              color: Color(0xFF6ce75c),
               title: "Train",
               onPressed: () => Navigator.of(context).push(
                 MaterialPageRoute(
