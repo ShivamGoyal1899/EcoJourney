@@ -1,8 +1,8 @@
 import 'package:EcoJourney/screens/ValidationScreens/ReceiptUploadScreen.dart';
 import 'package:flutter/material.dart';
-import '../../main.dart';
-import '../AppDrawer.dart';
-import 'TripStartEndScreen.dart';
+import '../main.dart';
+import 'AppDrawer.dart';
+import 'TravelFlowScreens/TripStartEndScreen.dart';
 
 class AutoRegistration extends StatefulWidget {
   @override
@@ -78,9 +78,9 @@ class _AutoRegistrationState extends State<AutoRegistration> {
                         borderRadius: BorderRadius.circular(50.0)),
                     elevation: 4.0,
                     onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) =>
-                              ReceiptUploadScreen()));
+//                      Navigator.of(context).push(MaterialPageRoute(
+//                          builder: (BuildContext context) =>
+//                              ReceiptUploadScreen()));
                     },
                     child: Container(
                       alignment: Alignment.center,

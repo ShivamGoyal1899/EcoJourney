@@ -3,7 +3,7 @@ import 'AuthenticationScreens/LoginScreen.dart';
 import 'AuthenticationScreens/GoogleFacebookAuthMethods.dart';
 import 'ProfileScreens/ProfileHomeScreen.dart';
 import 'SafeMode/SafeModeScreen.dart';
-import 'TravelFlowScreens/AutoRegistration.dart';
+import 'AutoRegistration.dart';
 import 'TravelFlowScreens/TravelHomeScreen.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -61,8 +61,8 @@ class MyDrawer extends StatelessWidget {
             title: Text("Redeem GreenPoints"),
             onTap: () {
               Navigator.pop(context);
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (BuildContext context) => ProfileHomeScreen()));
+//              Navigator.of(context).push(MaterialPageRoute(
+//                  builder: (BuildContext context) => ProfileHomeScreen()));
             },
           ),
           ListTile(

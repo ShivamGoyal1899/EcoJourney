@@ -1,7 +1,7 @@
 import 'package:EcoJourney/models/transitModel.dart';
 import 'package:http/http.dart' as http;
-import 'dart:convert';
 import 'dart:async';
+import 'dart:convert';
 
 class ApiResponse {
   Future<Transit> getTransit() async {

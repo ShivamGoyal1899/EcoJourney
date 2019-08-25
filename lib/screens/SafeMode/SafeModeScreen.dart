@@ -56,10 +56,20 @@ class _SafeModeScreenState extends State<SafeModeScreen> {
       ),
       body: GestureDetector(
         onLongPressUp: loadTimer,
-        child: Container(
-          color: Colors.white,
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
+        child: Center(
+          child: Container(
+            alignment: Alignment.center,
+            color: Colors.white,
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 30.0),
+              alignment: Alignment.center,
+                child: Text(
+                    "Press & hold your phone tight when you feel panic. Release to send inform your loved ones.",
+                    style: TextStyle(
+                        fontSize: 24.0, fontWeight: FontWeight.w700))),
+          ),
         ),
       ),
     );

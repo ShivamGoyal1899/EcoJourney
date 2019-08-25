@@ -1,7 +1,7 @@
 import 'package:EcoJourney/models/transitModel.dart';
 import 'package:EcoJourney/screens/ValidationScreens/ReceiptUploadScreen.dart';
 import 'package:EcoJourney/screens/ValidationScreens/ThankYouScreen.dart';
-import 'package:EcoJourney/services/transitServices.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -76,7 +76,7 @@ class _TripStartEndScreenState extends State<TripStartEndScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
                             Text(snapshot
-                                .data.routes[0].legs[0].departureTime.text +
+                                    .data.routes[0].legs[0].departureTime.text +
                                 " - " +
                                 snapshot
                                     .data.routes[0].legs[0].arrivalTime.text),
@@ -118,15 +118,10 @@ class _TripStartEndScreenState extends State<TripStartEndScreen> {
                                         .steps[0].htmlInstructions,
                                 defaultTextStyle: TextStyle(fontSize: 14.0)),
                           ),
-                          ListTile(
-                            title: Html(
-                                data: "- " +
-                                    snapshot.data.routes[0].legs[0].steps[0]
-                                        .steps[1].htmlInstructions,
-                                defaultTextStyle: TextStyle(fontSize: 14.0)),
-                          ),
+
                         ],
-                      ), ExpansionTile(
+                      ),
+                      ExpansionTile(
                         title: Text(snapshot
                             .data.routes[0].legs[0].steps[2].htmlInstructions),
                         children: <Widget>[
@@ -145,7 +140,8 @@ class _TripStartEndScreenState extends State<TripStartEndScreen> {
                                 defaultTextStyle: TextStyle(fontSize: 14.0)),
                           ),
                         ],
-                      ), ExpansionTile(
+                      ),
+                      ExpansionTile(
                         title: Text(snapshot
                             .data.routes[0].legs[0].steps[3].htmlInstructions),
                         children: <Widget>[
@@ -164,7 +160,8 @@ class _TripStartEndScreenState extends State<TripStartEndScreen> {
                                 defaultTextStyle: TextStyle(fontSize: 14.0)),
                           ),
                         ],
-                      ),                      ExpansionTile(
+                      ),
+                      ExpansionTile(
                         title: Text(snapshot
                             .data.routes[0].legs[0].steps[4].htmlInstructions),
                         children: <Widget>[
@@ -196,10 +193,10 @@ class _TripStartEndScreenState extends State<TripStartEndScreen> {
                           onPressed: () {
                             tripStarted == true
                                 ? Navigator.of(context).push(
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      ReceiptUploadScreen()),
-                            )
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            ReceiptUploadScreen()),
+                                  )
                                 : null;
                             setState(() {
                               tripStarted == false
@@ -233,7 +230,7 @@ class _TripStartEndScreenState extends State<TripStartEndScreen> {
                             ),
                           ),
                           color:
-                          tripStarted == false ? Colors.green : Colors.red,
+                              tripStarted == false ? Colors.green : Colors.red,
                         ),
                       ),
                     ],
