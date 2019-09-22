@@ -3,7 +3,7 @@ This is the code repository of the Android/iOS App of EcoJourney. EcoJourney is 
 
 ### Show some :heart: and star the repo to support the project
 
-[![GitHub stars](https://img.shields.io/github/stars/ShivamGoyal1899/EcoJourney.svg?style=social&label=Star)](https://github.com/ShivamGoyal1899/EcoJourney) [![GitHub forks](https://img.shields.io/github/forks/ShivamGoyal1899/EcoJourney.svg?style=social&label=Fork)](https://github.com/ShivamGoyal1899/EcoJourney/fork) [![GitHub watchers](https://img.shields.io/github/watchers/ShivamGoyal1899/EcoJourney.svg?style=social&label=Watch)](https://github.com/ShivamGoyal1899/EcoJourney) [![GitHub followers](https://img.shields.io/github/followers/ShivamGoyal1899.svg?style=social&label=Follow)](https://github.com/ShivamGoyal1899/EcoJourney)
+[![GitHub stars](https://img.shields.io/github/stars/ShivamGoyal1899/EcoJourney.svg?style=social&label=Star)](https://github.com/ShivamGoyal1899/EcoJourney) [![GitHub forks](https://img.shields.io/github/forks/ShivamGoyal1899/EcoJourney.svg?style=social&label=Fork)](https://github.com/ShivamGoyal1899/EcoJourney/fork) [![GitHub watchers](https://img.shields.io/github/watchers/ShivamGoyal1899/EcoJourney.svg?style=social&label=Watch)](https://github.com/ShivamGoyal1899/EcoJourney) [![GitHub followers](https://img.shields.io/github/followers/ShivamGoyal1899.svg?style=social&label=Follow)](https://github.com/ShivamGoyal1899)
 [![Twitter Follow](https://img.shields.io/twitter/follow/ShivamGoyal1899.svg?style=social)](https://twitter.com/ShivamGoyal1899)
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/MIT)
