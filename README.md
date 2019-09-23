@@ -11,10 +11,10 @@ The source code is **100% Dart**, and everything resides in the [/lib](https://g
 [![GitHub followers](https://img.shields.io/github/followers/ShivamGoyal1899.svg?style=social&label=Follow)](https://github.com/ShivamGoyal1899)
 [![Twitter Follow](https://img.shields.io/twitter/follow/ShivamGoyal1899.svg?style=social)](https://twitter.com/ShivamGoyal1899)
 
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/MIT)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Repo Size](https://img.shields.io/github/repo-size/ShivamGoyal1899/EcoJourney)](https://github.com/ShivamGoyal1899/EcoJourney)
-[![Release](https://img.shields.io/github/v/release/ShivamGoyal1899/EcoJourney)](https://github.com/ShivamGoyal1899/EcoJourney/releases/download/v1.0.0/EcoJourney.v1.0.0.apk)
+[![Open Source Love](https://img.shields.io/badge/Open%20Source-seagreen?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/license-MIT-red.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Repo Size](https://img.shields.io/github/repo-size/ShivamGoyal1899/EcoJourney?style=for-the-badge)](https://github.com/ShivamGoyal1899/EcoJourney)
+[![Release](https://img.shields.io/github/v/release/ShivamGoyal1899/EcoJourney?style=for-the-badge)](https://github.com/ShivamGoyal1899/EcoJourney/releases/download/v1.0.0/EcoJourney.v1.0.0.apk)
 
 
 ## Download Android App
@@ -44,10 +44,6 @@ EcoJourney Android App is available [here](https://github.com/ShivamGoyal1899/Ec
 ## Versioning
 I've used [Semantic Versioning 2.0.0](https://semver.org/) for versioning throughout the app.
 
-### :heart: Found this project useful?
-
-If you found this project useful, then please consider giving it a :star: on Github and sharing it with your friends via social media.
-
 ## Project Created & Maintained By
 
 ### Shivam Goyal
@@ -66,14 +62,18 @@ Flutter Developer | Network Security | ML Enthusiast | Sophomore | Blogger
 ### [Jayati Gumber](https://github.com/JayatiGumber) (Thapar Institute)
 ### [Prabhav Bansal](https://github.com/p4prabhav) (IIIT Hyderabad)
 
-## Donate
+## Found this project useful?
 
-If you learned even a thing or two and want to thank me, consider buying me a :beer:
+If you found this project useful, then please consider giving it a :star: on Github and sharing it with your friends via social media.
 
-* [PayPal](https://www.paypal.me/shivamgoyal1899/)
-
-## Got Queries?
+## Got any Queries?
 If you got any queries or found a bug create a PR or ping me over on [hi@shivamgoyal.co](mailto:hi@shivamgoyal.co)
+
+## Found me generous?
+
+If you learned even a thing or two and want to thank me, consider buying me a drink :beer:
+
+[![Paypal](https://img.shields.io/badge/Sponsor-Paypal-informational?style=for-the-badge&logo=paypal)](https://www.paypal.me/shivamgoyal1899)
 
 ## License
 
