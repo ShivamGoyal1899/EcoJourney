@@ -1,13 +1,18 @@
 ## EcoJourney
 This is the code repository of the Android/iOS App of EcoJourney. EcoJourney is an Optimum Journey Planner which also provides rewards as an add-on. This app is designed & developed by Team RuntimeTerror in NEC Hackathon: Transport held on 24th & 25th August 2019 in Gurugram, India.
 
+The source code is **100% Dart**, and everything resides in the [/lib](https://github.com/ShivamGoyal1899/EcoJourney/tree/master/lib) folder.
+
 ### Show some :heart: and star the repo to support the project
 
-[![GitHub stars](https://img.shields.io/github/stars/ShivamGoyal1899/EcoJourney.svg?style=social&label=Star)](https://github.com/ShivamGoyal1899/EcoJourney) [![GitHub forks](https://img.shields.io/github/forks/ShivamGoyal1899/EcoJourney.svg?style=social&label=Fork)](https://github.com/ShivamGoyal1899/EcoJourney/fork) [![GitHub watchers](https://img.shields.io/github/watchers/ShivamGoyal1899/EcoJourney.svg?style=social&label=Watch)](https://github.com/ShivamGoyal1899/EcoJourney) [![GitHub followers](https://img.shields.io/github/followers/ShivamGoyal1899.svg?style=social&label=Follow)](https://github.com/ShivamGoyal1899)
+[![GitHub stars](https://img.shields.io/github/stars/ShivamGoyal1899/EcoJourney.svg?style=social&label=Star)](https://github.com/ShivamGoyal1899/EcoJourney)
+[![GitHub forks](https://img.shields.io/github/forks/ShivamGoyal1899/EcoJourney.svg?style=social&label=Fork)](https://github.com/ShivamGoyal1899/EcoJourney/fork)
+[![GitHub watchers](https://img.shields.io/github/watchers/ShivamGoyal1899/EcoJourney.svg?style=social&label=Watch)](https://github.com/ShivamGoyal1899/EcoJourney)
+[![GitHub followers](https://img.shields.io/github/followers/ShivamGoyal1899.svg?style=social&label=Follow)](https://github.com/ShivamGoyal1899)
 [![Twitter Follow](https://img.shields.io/twitter/follow/ShivamGoyal1899.svg?style=social)](https://twitter.com/ShivamGoyal1899)
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/MIT)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/ShivamGoyal1899/EcoJourney/blob/master/README.md)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Repo Size](https://img.shields.io/github/repo-size/ShivamGoyal1899/EcoJourney)](https://github.com/ShivamGoyal1899/EcoJourney)
 [![Release](https://img.shields.io/github/v/release/ShivamGoyal1899/EcoJourney)](https://github.com/ShivamGoyal1899/EcoJourney/releases/download/v1.0.0/EcoJourney.v1.0.0.apk)
 
@@ -19,6 +24,7 @@ EcoJourney Android App is available [here](https://github.com/ShivamGoyal1899/Ec
 1. Flutter
 2. Firebase
 3. Flask
+4. Google Transit API
 
 ## Flutter Packages Used
 1. intro_slider: ^2.2.7
@@ -54,9 +60,11 @@ Flutter Developer | Network Security | ML Enthusiast | Sophomore | Blogger
 <a href="https://facebook.com/ShivamGoyal1899"><img src="https://github.com/aritraroy/social-icons/blob/master/facebook-icon.png?raw=true" width="60"></a>
 <a href="https://instagram.com/shivamgoyal.co"><img src="https://github.com/aritraroy/social-icons/blob/master/instagram-icon.png?raw=true" width="60"></a>
 
-### Utkarsh Mishra (Thapar Institute)
-### Jayati Gumber (Thapar Institute)
-### Prabhav Bansal (IIIT Hyderabad)
+## Main Collaborators - Team RuntimeTerror
+
+### [Utkarsh Mishra](https://github.com/utkarsh1148) (Thapar Institute)
+### [Jayati Gumber](https://github.com/JayatiGumber) (Thapar Institute)
+### [Prabhav Bansal](https://github.com/p4prabhav) (IIIT Hyderabad)
 
 ## Donate
 
