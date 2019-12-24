@@ -1,15 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../../main.dart';
-import '../AppDrawer.dart';
-import '../AuthenticationScreens/GoogleFacebookAuthMethods.dart';
 
-class ProfileHomeScreen extends StatefulWidget {
+import '../global.dart';
+import '../main.dart';
+
+class Settings extends StatefulWidget {
   @override
-  _ProfileHomeScreenState createState() => _ProfileHomeScreenState();
+  _SettingsState createState() => _SettingsState();
 }
 
-class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
+class _SettingsState extends State<Settings> {
   bool _lights = true;
   bool _lights1 = false;
 
@@ -17,9 +17,8 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      drawer: MyDrawer(),
       appBar: AppBar(
-//        automaticallyImplyLeading: false,
+        automaticallyImplyLeading: false,
         backgroundColor: Colors.white,
         elevation: 0.0,
         centerTitle: true,
@@ -33,7 +32,7 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                Text("426",
+                Text(myReward,
                     style: TextStyle(
                         color: Color(0xFF6ce75c),
                         fontSize: 20.0,
@@ -53,8 +52,9 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
             alignment: Alignment.center,
             child: CircleAvatar(
               foregroundColor: Theme.of(context).primaryColor,
-              backgroundColor: Colors.grey,
-              backgroundImage: NetworkImage(imageUrl),
+              backgroundColor: Colors.white,
+              backgroundImage:
+                  NetworkImage('https://itsshivam.com/favicon.png'),
               radius: 60.0,
             ),
           ),
@@ -62,7 +62,7 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
             child: Column(
               children: <Widget>[
                 Text(
-                  name,
+                  myName,
                   style: TextStyle(
                     fontSize: 36.0,
                     fontWeight: FontWeight.w500,
@@ -71,7 +71,7 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
                 ),
                 SizedBox(height: 2.0),
                 Text(
-                  email,
+                  myEmail,
                   style: TextStyle(fontSize: 16.0, color: Color(0xFF6ce75c)),
                 )
               ],
@@ -91,7 +91,7 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 Text(
-                  "426",
+                  myReward,
                   style: TextStyle(
                       fontSize: 24.0,
                       color: Color(0xFF6ce75c),
@@ -186,7 +186,8 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
                     Icons.arrow_forward_ios,
                     color: Colors.black,
                     size: 16.0,
-                  ), onPressed: () {},
+                  ),
+                  onPressed: () {},
                 ),
               ],
             ),
@@ -219,7 +220,8 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
                     Icons.arrow_forward_ios,
                     color: Colors.black,
                     size: 16.0,
-                  ), onPressed: () {},
+                  ),
+                  onPressed: () {},
                 ),
               ],
             ),
@@ -245,7 +247,8 @@ class _ProfileHomeScreenState extends State<ProfileHomeScreen> {
                 Icons.arrow_forward_ios,
                 color: Colors.black,
                 size: 16.0,
-              ), onPressed: () {},
+              ),
+              onPressed: () {},
             ),
             onTap: () {},
           ),

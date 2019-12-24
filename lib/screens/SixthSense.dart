@@ -1,19 +1,20 @@
 import 'dart:async';
-import 'package:EcoJourney/screens/AuthenticationScreens/LoginScreen.dart';
-import 'package:EcoJourney/screens/TravelFlowScreens/TravelHomeScreen.dart';
-import 'package:flutter/material.dart';
-import '../../main.dart';
-import '../AppDrawer.dart';
 
-class SafeModeScreen extends StatefulWidget {
+import 'package:EcoJourney/screens/TravelFlowScreens/HomeScreen.dart';
+import 'package:flutter/material.dart';
+
+import '../global.dart';
+import '../main.dart';
+
+class SixthSense extends StatefulWidget {
   @override
-  _SafeModeScreenState createState() => _SafeModeScreenState();
+  _SixthSenseState createState() => _SixthSenseState();
 }
 
-class _SafeModeScreenState extends State<SafeModeScreen> {
+class _SixthSenseState extends State<SixthSense> {
   void _goToHomeScreen() {
-    Navigator.of(context).push(MaterialPageRoute(
-        builder: (BuildContext context) => TravelHomeScreen()));
+    Navigator.of(context).push(
+        MaterialPageRoute(builder: (BuildContext context) => HomeScreen()));
   }
 
   Future<Timer> loadTimer() async {
@@ -26,9 +27,7 @@ class _SafeModeScreenState extends State<SafeModeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      drawer: MyDrawer(),
       appBar: AppBar(
-//        automaticallyImplyLeading: false,
         backgroundColor: Colors.white,
         elevation: 0.0,
         centerTitle: true,
@@ -42,7 +41,7 @@ class _SafeModeScreenState extends State<SafeModeScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                Text("426",
+                Text(myReward,
                     style: TextStyle(
                         color: Color(0xFF6ce75c),
                         fontSize: 20.0,
@@ -63,8 +62,8 @@ class _SafeModeScreenState extends State<SafeModeScreen> {
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 30.0),
-              alignment: Alignment.center,
+                padding: EdgeInsets.symmetric(horizontal: 30.0),
+                alignment: Alignment.center,
                 child: Text(
                     "Press & hold your phone tight when you feel panic. Release to send inform your loved ones.",
                     style: TextStyle(

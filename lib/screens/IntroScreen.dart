@@ -1,8 +1,8 @@
-import '../AuthenticationScreens/LoginScreen.dart';
+import 'package:EcoJourney/screens/RegistrationScreens/loginVerificationScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:intro_slider/dot_animation_enum.dart';
 import 'package:intro_slider/intro_slider.dart';
 import 'package:intro_slider/slide_object.dart';
-import 'package:intro_slider/dot_animation_enum.dart';
 
 class IntroSliderScreen extends StatefulWidget {
   @override
@@ -28,7 +28,7 @@ class _IntroSliderScreenState extends State<IntroSliderScreen> {
             fontSize: 20.0,
             fontStyle: FontStyle.normal,
             fontWeight: FontWeight.w500),
-        pathImage: "assets/images/slider0.png",
+        pathImage: "assets/images/ic_logo.png",
         heightImage: 100.0,
       ),
     );
@@ -43,7 +43,7 @@ class _IntroSliderScreenState extends State<IntroSliderScreen> {
             fontSize: 20.0,
             fontStyle: FontStyle.normal,
             fontWeight: FontWeight.w500),
-        pathImage: "assets/images/slider1.png",
+        pathImage: "assets/images/ic_logo.png",
       ),
     );
     slides.add(
@@ -58,7 +58,7 @@ class _IntroSliderScreenState extends State<IntroSliderScreen> {
             fontSize: 20.0,
             fontStyle: FontStyle.normal,
             fontWeight: FontWeight.w500),
-        pathImage: "assets/images/slider2.png",
+        pathImage: "assets/images/ic_logo.png",
       ),
     );
   }
@@ -66,7 +66,7 @@ class _IntroSliderScreenState extends State<IntroSliderScreen> {
   void onDonePress() {
     // Back to the first tab
     Navigator.of(context).push(
-      MaterialPageRoute(builder: (context) => LoginScreen()),
+      MaterialPageRoute(builder: (context) => LoginVerificationScreen()),
     );
   }
 

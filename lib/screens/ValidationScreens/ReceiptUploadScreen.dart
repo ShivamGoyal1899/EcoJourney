@@ -1,10 +1,8 @@
-import 'dart:io';
-
-import 'package:EcoJourney/screens/AppDrawer.dart';
 import 'package:EcoJourney/screens/ValidationScreens/ThankYouScreen.dart';
 import 'package:flutter/material.dart';
+
+import '../../global.dart';
 import '../../main.dart';
-//import 'package:image_picker/image_picker.dart';
 
 class ReceiptUploadScreen extends StatefulWidget {
   @override
@@ -14,26 +12,28 @@ class ReceiptUploadScreen extends StatefulWidget {
 class _ReceiptUploadScreenState extends State<ReceiptUploadScreen> {
 //  File image;
 //
-//  Camera_picker() async {
-//    File img = await ImagePicker.pickImage(source: ImageSource.camera);
+//  Future Camera_picker() async {
+//    var img = await ImagePicker.pickImage(source: ImageSource.camera);
 //    if (img != null) {
-//      image = img;
-//      setState(() {});
+//      setState(() {
+//        image = img;
+//      });
 //    }
 //  }
 //
-//  Gallery_picker() async {
-//    File img = await ImagePicker.pickImage(source: ImageSource.gallery);
+//  Future Gallery_picker() async {
+//    var img = await ImagePicker.pickImage(source: ImageSource.gallery);
 //    if (img != null) {
-//      image = img;
-//      setState(() {});
+//      setState(() {
+//        image = img;
+//      });
 //    }
 //  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: MyDrawer(),
+      backgroundColor: Colors.white,
       appBar: AppBar(
 //        automaticallyImplyLeading: false,
         backgroundColor: Colors.white,
@@ -49,7 +49,7 @@ class _ReceiptUploadScreenState extends State<ReceiptUploadScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                Text("426",
+                Text(myReward,
                     style: TextStyle(
                         color: Color(0xFF6ce75c),
                         fontSize: 20.0,
@@ -68,15 +68,7 @@ class _ReceiptUploadScreenState extends State<ReceiptUploadScreen> {
           children: <Widget>[
             new Container(
               height: 350.0,
-              child: new Center(
-                child:  new Text(
-                        "No image selected",
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16.0),
-                      )
-              ),
+              child: new Center(child: Image.asset('assets/images/ticket.jpg')),
             ),
             new Divider(
               height: 0.0,

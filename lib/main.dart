@@ -1,6 +1,6 @@
+import 'package:EcoJourney/screens/RegistrationScreens/loginVerificationScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'screens/IntroScreens/IntroScreen.dart';
 
 void main() {
   SystemChrome.setPreferredOrientations(
@@ -20,7 +20,7 @@ class _EcoJourneyAppState extends State<EcoJourneyApp> {
       title: "EcoJourney",
       theme: ThemeData(fontFamily: "Quicksand"),
       debugShowCheckedModeBanner: false,
-      home: IntroSliderScreen(),
+      home: LoginVerificationScreen(),
     );
   }
 }

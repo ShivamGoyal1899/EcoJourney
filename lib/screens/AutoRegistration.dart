@@ -1,8 +1,7 @@
-import 'package:EcoJourney/screens/ValidationScreens/ReceiptUploadScreen.dart';
 import 'package:flutter/material.dart';
+
+import '../global.dart';
 import '../main.dart';
-import 'AppDrawer.dart';
-import 'TravelFlowScreens/TripStartEndScreen.dart';
 
 class AutoRegistration extends StatefulWidget {
   @override
@@ -15,10 +14,8 @@ class _AutoRegistrationState extends State<AutoRegistration> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: MyDrawer(),
       backgroundColor: Colors.white,
       appBar: AppBar(
-//        automaticallyImplyLeading: false,
         backgroundColor: Colors.white,
         elevation: 0.0,
         centerTitle: true,
@@ -33,7 +30,7 @@ class _AutoRegistrationState extends State<AutoRegistration> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Text("426",
+                  Text(myReward,
                       style: TextStyle(
                           color: Color(0xFF6ce75c),
                           fontSize: 20.0,

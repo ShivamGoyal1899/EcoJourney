@@ -36,22 +36,36 @@ class Transit {
   });
 
   factory Transit.fromJson(Map<String, dynamic> json) => new Transit(
-    geocodedWaypoints: json["geocoded_waypoints"] == null ? null : new List<GeocodedWaypoint>.from(json["geocoded_waypoints"].map((x) => GeocodedWaypoint.fromJson(x))),
-    routes: json["routes"] == null ? null : new List<Route>.from(json["routes"].map((x) => Route.fromJson(x))),
-    status: json["status"] == null ? null : json["status"],
-    name: json["name"] == null ? null : json["name"],
-    founded: json["founded"] == null ? null : json["founded"],
-    members: json["members"] == null ? null : new List<String>.from(json["members"].map((x) => x)),
-  );
+        geocodedWaypoints: json["geocoded_waypoints"] == null
+            ? null
+            : new List<GeocodedWaypoint>.from(json["geocoded_waypoints"]
+                .map((x) => GeocodedWaypoint.fromJson(x))),
+        routes: json["routes"] == null
+            ? null
+            : new List<Route>.from(
+                json["routes"].map((x) => Route.fromJson(x))),
+        status: json["status"] == null ? null : json["status"],
+        name: json["name"] == null ? null : json["name"],
+        founded: json["founded"] == null ? null : json["founded"],
+        members: json["members"] == null
+            ? null
+            : new List<String>.from(json["members"].map((x) => x)),
+      );
 
   Map<String, dynamic> toJson() => {
-    "geocoded_waypoints": geocodedWaypoints == null ? null : new List<dynamic>.from(geocodedWaypoints.map((x) => x.toJson())),
-    "routes": routes == null ? null : new List<dynamic>.from(routes.map((x) => x.toJson())),
-    "status": status == null ? null : status,
-    "name": name == null ? null : name,
-    "founded": founded == null ? null : founded,
-    "members": members == null ? null : new List<dynamic>.from(members.map((x) => x)),
-  };
+        "geocoded_waypoints": geocodedWaypoints == null
+            ? null
+            : new List<dynamic>.from(geocodedWaypoints.map((x) => x.toJson())),
+        "routes": routes == null
+            ? null
+            : new List<dynamic>.from(routes.map((x) => x.toJson())),
+        "status": status == null ? null : status,
+        "name": name == null ? null : name,
+        "founded": founded == null ? null : founded,
+        "members": members == null
+            ? null
+            : new List<dynamic>.from(members.map((x) => x)),
+      };
 }
 
 class GeocodedWaypoint {
@@ -65,17 +79,18 @@ class GeocodedWaypoint {
     this.types,
   });
 
-  factory GeocodedWaypoint.fromJson(Map<String, dynamic> json) => new GeocodedWaypoint(
-    geocoderStatus: json["geocoder_status"],
-    placeId: json["place_id"],
-    types: new List<String>.from(json["types"].map((x) => x)),
-  );
+  factory GeocodedWaypoint.fromJson(Map<String, dynamic> json) =>
+      new GeocodedWaypoint(
+        geocoderStatus: json["geocoder_status"],
+        placeId: json["place_id"],
+        types: new List<String>.from(json["types"].map((x) => x)),
+      );
 
   Map<String, dynamic> toJson() => {
-    "geocoder_status": geocoderStatus,
-    "place_id": placeId,
-    "types": new List<dynamic>.from(types.map((x) => x)),
-  };
+        "geocoder_status": geocoderStatus,
+        "place_id": placeId,
+        "types": new List<dynamic>.from(types.map((x) => x)),
+      };
 }
 
 class Route {
@@ -100,26 +115,27 @@ class Route {
   });
 
   factory Route.fromJson(Map<String, dynamic> json) => new Route(
-    bounds: Bounds.fromJson(json["bounds"]),
-    copyrights: json["copyrights"],
-    fare: Fare.fromJson(json["fare"]),
-    legs: new List<Leg>.from(json["legs"].map((x) => Leg.fromJson(x))),
-    overviewPolyline: Polyline.fromJson(json["overview_polyline"]),
-    summary: json["summary"],
-    warnings: new List<String>.from(json["warnings"].map((x) => x)),
-    waypointOrder: new List<dynamic>.from(json["waypoint_order"].map((x) => x)),
-  );
+        bounds: Bounds.fromJson(json["bounds"]),
+        copyrights: json["copyrights"],
+        fare: Fare.fromJson(json["fare"]),
+        legs: new List<Leg>.from(json["legs"].map((x) => Leg.fromJson(x))),
+        overviewPolyline: Polyline.fromJson(json["overview_polyline"]),
+        summary: json["summary"],
+        warnings: new List<String>.from(json["warnings"].map((x) => x)),
+        waypointOrder:
+            new List<dynamic>.from(json["waypoint_order"].map((x) => x)),
+      );
 
   Map<String, dynamic> toJson() => {
-    "bounds": bounds.toJson(),
-    "copyrights": copyrights,
-    "fare": fare.toJson(),
-    "legs": new List<dynamic>.from(legs.map((x) => x.toJson())),
-    "overview_polyline": overviewPolyline.toJson(),
-    "summary": summary,
-    "warnings": new List<dynamic>.from(warnings.map((x) => x)),
-    "waypoint_order": new List<dynamic>.from(waypointOrder.map((x) => x)),
-  };
+        "bounds": bounds.toJson(),
+        "copyrights": copyrights,
+        "fare": fare.toJson(),
+        "legs": new List<dynamic>.from(legs.map((x) => x.toJson())),
+        "overview_polyline": overviewPolyline.toJson(),
+        "summary": summary,
+        "warnings": new List<dynamic>.from(warnings.map((x) => x)),
+        "waypoint_order": new List<dynamic>.from(waypointOrder.map((x) => x)),
+      };
 }
 
 class Bounds {
@@ -132,14 +148,14 @@ class Bounds {
   });
 
   factory Bounds.fromJson(Map<String, dynamic> json) => new Bounds(
-    northeast: Northeast.fromJson(json["northeast"]),
-    southwest: Northeast.fromJson(json["southwest"]),
-  );
+        northeast: Northeast.fromJson(json["northeast"]),
+        southwest: Northeast.fromJson(json["southwest"]),
+      );
 
   Map<String, dynamic> toJson() => {
-    "northeast": northeast.toJson(),
-    "southwest": southwest.toJson(),
-  };
+        "northeast": northeast.toJson(),
+        "southwest": southwest.toJson(),
+      };
 }
 
 class Northeast {
@@ -152,14 +168,14 @@ class Northeast {
   });
 
   factory Northeast.fromJson(Map<String, dynamic> json) => new Northeast(
-    lat: json["lat"].toDouble(),
-    lng: json["lng"].toDouble(),
-  );
+        lat: json["lat"].toDouble(),
+        lng: json["lng"].toDouble(),
+      );
 
   Map<String, dynamic> toJson() => {
-    "lat": lat,
-    "lng": lng,
-  };
+        "lat": lat,
+        "lng": lng,
+      };
 }
 
 class Fare {
@@ -174,16 +190,16 @@ class Fare {
   });
 
   factory Fare.fromJson(Map<String, dynamic> json) => new Fare(
-    currency: json["currency"],
-    text: json["text"],
-    value: json["value"],
-  );
+        currency: json["currency"],
+        text: json["text"],
+        value: json["value"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "currency": currency,
-    "text": text,
-    "value": value,
-  };
+        "currency": currency,
+        "text": text,
+        "value": value,
+      };
 }
 
 class Leg {
@@ -214,32 +230,34 @@ class Leg {
   });
 
   factory Leg.fromJson(Map<String, dynamic> json) => new Leg(
-    arrivalTime: Time.fromJson(json["arrival_time"]),
-    departureTime: Time.fromJson(json["departure_time"]),
-    distance: Distance.fromJson(json["distance"]),
-    duration: Distance.fromJson(json["duration"]),
-    endAddress: json["end_address"],
-    endLocation: Northeast.fromJson(json["end_location"]),
-    startAddress: json["start_address"],
-    startLocation: Northeast.fromJson(json["start_location"]),
-    steps: new List<Step>.from(json["steps"].map((x) => Step.fromJson(x))),
-    trafficSpeedEntry: new List<dynamic>.from(json["traffic_speed_entry"].map((x) => x)),
-    viaWaypoint: new List<dynamic>.from(json["via_waypoint"].map((x) => x)),
-  );
+        arrivalTime: Time.fromJson(json["arrival_time"]),
+        departureTime: Time.fromJson(json["departure_time"]),
+        distance: Distance.fromJson(json["distance"]),
+        duration: Distance.fromJson(json["duration"]),
+        endAddress: json["end_address"],
+        endLocation: Northeast.fromJson(json["end_location"]),
+        startAddress: json["start_address"],
+        startLocation: Northeast.fromJson(json["start_location"]),
+        steps: new List<Step>.from(json["steps"].map((x) => Step.fromJson(x))),
+        trafficSpeedEntry:
+            new List<dynamic>.from(json["traffic_speed_entry"].map((x) => x)),
+        viaWaypoint: new List<dynamic>.from(json["via_waypoint"].map((x) => x)),
+      );
 
   Map<String, dynamic> toJson() => {
-    "arrival_time": arrivalTime.toJson(),
-    "departure_time": departureTime.toJson(),
-    "distance": distance.toJson(),
-    "duration": duration.toJson(),
-    "end_address": endAddress,
-    "end_location": endLocation.toJson(),
-    "start_address": startAddress,
-    "start_location": startLocation.toJson(),
-    "steps": new List<dynamic>.from(steps.map((x) => x.toJson())),
-    "traffic_speed_entry": new List<dynamic>.from(trafficSpeedEntry.map((x) => x)),
-    "via_waypoint": new List<dynamic>.from(viaWaypoint.map((x) => x)),
-  };
+        "arrival_time": arrivalTime.toJson(),
+        "departure_time": departureTime.toJson(),
+        "distance": distance.toJson(),
+        "duration": duration.toJson(),
+        "end_address": endAddress,
+        "end_location": endLocation.toJson(),
+        "start_address": startAddress,
+        "start_location": startLocation.toJson(),
+        "steps": new List<dynamic>.from(steps.map((x) => x.toJson())),
+        "traffic_speed_entry":
+            new List<dynamic>.from(trafficSpeedEntry.map((x) => x)),
+        "via_waypoint": new List<dynamic>.from(viaWaypoint.map((x) => x)),
+      };
 }
 
 class Time {
@@ -254,16 +272,16 @@ class Time {
   });
 
   factory Time.fromJson(Map<String, dynamic> json) => new Time(
-    text: json["text"],
-    timeZone: json["time_zone"],
-    value: json["value"],
-  );
+        text: json["text"],
+        timeZone: json["time_zone"],
+        value: json["value"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "text": text,
-    "time_zone": timeZone,
-    "value": value,
-  };
+        "text": text,
+        "time_zone": timeZone,
+        "value": value,
+      };
 }
 
 class Distance {
@@ -276,14 +294,14 @@ class Distance {
   });
 
   factory Distance.fromJson(Map<String, dynamic> json) => new Distance(
-    text: json["text"],
-    value: json["value"],
-  );
+        text: json["text"],
+        value: json["value"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "text": text,
-    "value": value,
-  };
+        "text": text,
+        "value": value,
+      };
 }
 
 class Step {
@@ -312,30 +330,39 @@ class Step {
   });
 
   factory Step.fromJson(Map<String, dynamic> json) => new Step(
-    distance: Distance.fromJson(json["distance"]),
-    duration: Distance.fromJson(json["duration"]),
-    endLocation: Northeast.fromJson(json["end_location"]),
-    htmlInstructions: json["html_instructions"] == null ? null : json["html_instructions"],
-    polyline: Polyline.fromJson(json["polyline"]),
-    startLocation: Northeast.fromJson(json["start_location"]),
-    steps: json["steps"] == null ? null : new List<Step>.from(json["steps"].map((x) => Step.fromJson(x))),
-    travelMode: travelModeValues.map[json["travel_mode"]],
-    transitDetails: json["transit_details"] == null ? null : TransitDetails.fromJson(json["transit_details"]),
-    maneuver: json["maneuver"] == null ? null : json["maneuver"],
-  );
+        distance: Distance.fromJson(json["distance"]),
+        duration: Distance.fromJson(json["duration"]),
+        endLocation: Northeast.fromJson(json["end_location"]),
+        htmlInstructions: json["html_instructions"] == null
+            ? null
+            : json["html_instructions"],
+        polyline: Polyline.fromJson(json["polyline"]),
+        startLocation: Northeast.fromJson(json["start_location"]),
+        steps: json["steps"] == null
+            ? null
+            : new List<Step>.from(json["steps"].map((x) => Step.fromJson(x))),
+        travelMode: travelModeValues.map[json["travel_mode"]],
+        transitDetails: json["transit_details"] == null
+            ? null
+            : TransitDetails.fromJson(json["transit_details"]),
+        maneuver: json["maneuver"] == null ? null : json["maneuver"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "distance": distance.toJson(),
-    "duration": duration.toJson(),
-    "end_location": endLocation.toJson(),
-    "html_instructions": htmlInstructions == null ? null : htmlInstructions,
-    "polyline": polyline.toJson(),
-    "start_location": startLocation.toJson(),
-    "steps": steps == null ? null : new List<dynamic>.from(steps.map((x) => x.toJson())),
-    "travel_mode": travelModeValues.reverse[travelMode],
-    "transit_details": transitDetails == null ? null : transitDetails.toJson(),
-    "maneuver": maneuver == null ? null : maneuver,
-  };
+        "distance": distance.toJson(),
+        "duration": duration.toJson(),
+        "end_location": endLocation.toJson(),
+        "html_instructions": htmlInstructions == null ? null : htmlInstructions,
+        "polyline": polyline.toJson(),
+        "start_location": startLocation.toJson(),
+        "steps": steps == null
+            ? null
+            : new List<dynamic>.from(steps.map((x) => x.toJson())),
+        "travel_mode": travelModeValues.reverse[travelMode],
+        "transit_details":
+            transitDetails == null ? null : transitDetails.toJson(),
+        "maneuver": maneuver == null ? null : maneuver,
+      };
 }
 
 class Polyline {
@@ -346,12 +373,12 @@ class Polyline {
   });
 
   factory Polyline.fromJson(Map<String, dynamic> json) => new Polyline(
-    points: json["points"],
-  );
+        points: json["points"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "points": points,
-  };
+        "points": points,
+      };
 }
 
 class TransitDetails {
@@ -375,27 +402,28 @@ class TransitDetails {
     this.numStops,
   });
 
-  factory TransitDetails.fromJson(Map<String, dynamic> json) => new TransitDetails(
-    arrivalStop: Stop.fromJson(json["arrival_stop"]),
-    arrivalTime: Time.fromJson(json["arrival_time"]),
-    departureStop: Stop.fromJson(json["departure_stop"]),
-    departureTime: Time.fromJson(json["departure_time"]),
-    headsign: json["headsign"],
-    headway: json["headway"],
-    line: Line.fromJson(json["line"]),
-    numStops: json["num_stops"],
-  );
+  factory TransitDetails.fromJson(Map<String, dynamic> json) =>
+      new TransitDetails(
+        arrivalStop: Stop.fromJson(json["arrival_stop"]),
+        arrivalTime: Time.fromJson(json["arrival_time"]),
+        departureStop: Stop.fromJson(json["departure_stop"]),
+        departureTime: Time.fromJson(json["departure_time"]),
+        headsign: json["headsign"],
+        headway: json["headway"],
+        line: Line.fromJson(json["line"]),
+        numStops: json["num_stops"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "arrival_stop": arrivalStop.toJson(),
-    "arrival_time": arrivalTime.toJson(),
-    "departure_stop": departureStop.toJson(),
-    "departure_time": departureTime.toJson(),
-    "headsign": headsign,
-    "headway": headway,
-    "line": line.toJson(),
-    "num_stops": numStops,
-  };
+        "arrival_stop": arrivalStop.toJson(),
+        "arrival_time": arrivalTime.toJson(),
+        "departure_stop": departureStop.toJson(),
+        "departure_time": departureTime.toJson(),
+        "headsign": headsign,
+        "headway": headway,
+        "line": line.toJson(),
+        "num_stops": numStops,
+      };
 }
 
 class Stop {
@@ -408,14 +436,14 @@ class Stop {
   });
 
   factory Stop.fromJson(Map<String, dynamic> json) => new Stop(
-    location: Northeast.fromJson(json["location"]),
-    name: json["name"],
-  );
+        location: Northeast.fromJson(json["location"]),
+        name: json["name"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "location": location.toJson(),
-    "name": name,
-  };
+        "location": location.toJson(),
+        "name": name,
+      };
 }
 
 class Line {
@@ -436,22 +464,23 @@ class Line {
   });
 
   factory Line.fromJson(Map<String, dynamic> json) => new Line(
-    agencies: new List<Agency>.from(json["agencies"].map((x) => Agency.fromJson(x))),
-    color: json["color"],
-    name: json["name"],
-    shortName: json["short_name"],
-    textColor: json["text_color"],
-    vehicle: Vehicle.fromJson(json["vehicle"]),
-  );
+        agencies: new List<Agency>.from(
+            json["agencies"].map((x) => Agency.fromJson(x))),
+        color: json["color"],
+        name: json["name"],
+        shortName: json["short_name"],
+        textColor: json["text_color"],
+        vehicle: Vehicle.fromJson(json["vehicle"]),
+      );
 
   Map<String, dynamic> toJson() => {
-    "agencies": new List<dynamic>.from(agencies.map((x) => x.toJson())),
-    "color": color,
-    "name": name,
-    "short_name": shortName,
-    "text_color": textColor,
-    "vehicle": vehicle.toJson(),
-  };
+        "agencies": new List<dynamic>.from(agencies.map((x) => x.toJson())),
+        "color": color,
+        "name": name,
+        "short_name": shortName,
+        "text_color": textColor,
+        "vehicle": vehicle.toJson(),
+      };
 }
 
 class Agency {
@@ -464,14 +493,14 @@ class Agency {
   });
 
   factory Agency.fromJson(Map<String, dynamic> json) => new Agency(
-    name: json["name"],
-    url: json["url"],
-  );
+        name: json["name"],
+        url: json["url"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "name": name,
-    "url": url,
-  };
+        "name": name,
+        "url": url,
+      };
 }
 
 class Vehicle {
@@ -488,26 +517,24 @@ class Vehicle {
   });
 
   factory Vehicle.fromJson(Map<String, dynamic> json) => new Vehicle(
-    icon: json["icon"],
-    localIcon: json["local_icon"],
-    name: json["name"],
-    type: json["type"],
-  );
+        icon: json["icon"],
+        localIcon: json["local_icon"],
+        name: json["name"],
+        type: json["type"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "icon": icon,
-    "local_icon": localIcon,
-    "name": name,
-    "type": type,
-  };
+        "icon": icon,
+        "local_icon": localIcon,
+        "name": name,
+        "type": type,
+      };
 }
 
 enum TravelMode { WALKING, TRANSIT }
 
-final travelModeValues = new EnumValues({
-  "TRANSIT": TravelMode.TRANSIT,
-  "WALKING": TravelMode.WALKING
-});
+final travelModeValues = new EnumValues(
+    {"TRANSIT": TravelMode.TRANSIT, "WALKING": TravelMode.WALKING});
 
 class Album {
   String name;
@@ -521,16 +548,17 @@ class Album {
   });
 
   factory Album.fromJson(Map<String, dynamic> json) => new Album(
-    name: json["name"],
-    artist: Artist.fromJson(json["artist"]),
-    tracks: new List<Track>.from(json["tracks"].map((x) => Track.fromJson(x))),
-  );
+        name: json["name"],
+        artist: Artist.fromJson(json["artist"]),
+        tracks:
+            new List<Track>.from(json["tracks"].map((x) => Track.fromJson(x))),
+      );
 
   Map<String, dynamic> toJson() => {
-    "name": name,
-    "artist": artist.toJson(),
-    "tracks": new List<dynamic>.from(tracks.map((x) => x.toJson())),
-  };
+        "name": name,
+        "artist": artist.toJson(),
+        "tracks": new List<dynamic>.from(tracks.map((x) => x.toJson())),
+      };
 }
 
 class Artist {
@@ -545,16 +573,16 @@ class Artist {
   });
 
   factory Artist.fromJson(Map<String, dynamic> json) => new Artist(
-    name: json["name"],
-    founded: json["founded"],
-    members: new List<String>.from(json["members"].map((x) => x)),
-  );
+        name: json["name"],
+        founded: json["founded"],
+        members: new List<String>.from(json["members"].map((x) => x)),
+      );
 
   Map<String, dynamic> toJson() => {
-    "name": name,
-    "founded": founded,
-    "members": new List<dynamic>.from(members.map((x) => x)),
-  };
+        "name": name,
+        "founded": founded,
+        "members": new List<dynamic>.from(members.map((x) => x)),
+      };
 }
 
 class Track {
@@ -567,14 +595,14 @@ class Track {
   });
 
   factory Track.fromJson(Map<String, dynamic> json) => new Track(
-    name: json["name"],
-    duration: json["duration"],
-  );
+        name: json["name"],
+        duration: json["duration"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "name": name,
-    "duration": duration,
-  };
+        "name": name,
+        "duration": duration,
+      };
 }
 
 class EnumValues<T> {
