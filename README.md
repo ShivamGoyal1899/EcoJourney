@@ -27,6 +27,12 @@
 Show some love 💜 and Star ⭐️ the Repository to support the project.
 </p>
 
+|                     Home Screen                   |                    Voice Search                   |                       Rewardz                     |
+|:-------------------------------------------------:|:-------------------------------------------------:|:-------------------------------------------------:|
+| <img width="1604" src="./images/screenshot1.jpg"> | <img width="1604" src="./images/screenshot2.jpg"> | <img width="1604" src="./images/screenshot3.jpg"> |
+| <img width="1604" src="./images/screenshot4.jpg"> | <img width="1604" src="./images/screenshot5.jpg"> | <img width="1604" src="./images/screenshot6.jpg"> |
+|                    **App Drawer**                 |                  **Voice Search**                 |                     **Settings**                  |
+
 ## What’s In This Document
 
 - [Get Up and Running in 5 Minutes](#rocket-get-up-and-running-in-5-minutes)
