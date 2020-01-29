@@ -1,103 +1,86 @@
-## EcoJourney
-This is the code repository of the Android/iOS App of EcoJourney. EcoJourney is an Optimum Journey Planner which also provides rewards as an add-on. This app is designed & developed by Team RuntimeTerror in NEC Hackathon: Transport held on 24th & 25th August 2019 in Gurugram, India.
+<p align="center">
+  <a href="https://github.com/ShivamGoyal1899/EcoJourney">
+    <img alt="EcoJourney" src="./images/ecoJourney - 3000x1000.png" width="100%" />
+  </a>
+</p>
+<p align="center">
+  EcoJourney is an Optimum Travel Planner which suggests you the best routes available using public transport and also provides reward points as an add-on.
+</p>
+<p align="center">
+  <a href="https://github.com/ShivamGoyal1899/EcoJourney/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/ShivamGoyal1899/EcoJourney?style=for-the-badge" alt="EcoJourney is released under the MIT license." />
+  </a>
+  <a href="https://github.com/ShivamGoyal1899/EcoJourney/releases">
+    <img src="https://img.shields.io/github/v/release/ShivamGoyal1899/EcoJourney?style=for-the-badge" alt="Latest Version Available." />
+  </a>
+  <a href="https://github.com/ShivamGoyal1899/EcoJourney/archive/master.zip">
+    <img src="https://img.shields.io/github/repo-size/ShivamGoyal1899/EcoJourney?style=for-the-badge" alt="GitHub Repository size." />
+  </a>
+  <a href="https://github.com/ShivamGoyal1899/EcoJourney/releases">
+    <img src="https://img.shields.io/github/downloads/ShivamGoyal1899/EcoJourney/total?style=for-the-badge" alt="Total downloads on GitHub." />
+  </a>
+  <a href="https://paypal.me/shivamgoyal1899">
+    <img src="https://img.shields.io/badge/Sponsor-Paypal-informational?style=for-the-badge&logo=paypal" alt="Sponsor on PayPal." />
+  </a>
+</p>
+<p align="center">
+Show some love 💜 and Star ⭐️ the Repository to support the project.
+</p>
 
-The source code is **100% Dart**, and everything resides in the [/lib](https://github.com/ShivamGoyal1899/EcoJourney/tree/master/lib) folder.
+## What’s In This Document
 
-### Show some :heart: and star the repo to support the project
+- [Get Up and Running in 5 Minutes](#rocket-get-up-and-running-in-5-minutes)
+- [Flutter / Dart Packages Used](#ballot_box-flutter-dart-packages-used)
+- [Versioning](#label-versioning)
+- [Queries / Bugs](#question-queries-bugs)
+- [License](#memo-license)
+- [Thanks to Contributors and Sponsors](#purple_heart-thanks)
 
-[![GitHub stars](https://img.shields.io/github/stars/ShivamGoyal1899/EcoJourney.svg?style=social&label=Star)](https://github.com/ShivamGoyal1899/EcoJourney)
-[![GitHub forks](https://img.shields.io/github/forks/ShivamGoyal1899/EcoJourney.svg?style=social&label=Fork)](https://github.com/ShivamGoyal1899/EcoJourney/fork)
-[![GitHub watchers](https://img.shields.io/github/watchers/ShivamGoyal1899/EcoJourney.svg?style=social&label=Watch)](https://github.com/ShivamGoyal1899/EcoJourney)
-[![GitHub followers](https://img.shields.io/github/followers/ShivamGoyal1899.svg?style=social&label=Follow)](https://github.com/ShivamGoyal1899)
-[![Twitter Follow](https://img.shields.io/twitter/follow/ShivamGoyal1899.svg?style=social)](https://twitter.com/ShivamGoyal1899)
+## :rocket: Get Up and Running in 5 Minutes
 
-[![Open Source Love](https://img.shields.io/badge/Open%20Source-seagreen?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![License](https://img.shields.io/badge/license-MIT-red.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Repo Size](https://img.shields.io/github/repo-size/ShivamGoyal1899/EcoJourney?style=for-the-badge)](https://github.com/ShivamGoyal1899/EcoJourney)
-[![Release](https://img.shields.io/github/v/release/ShivamGoyal1899/EcoJourney?style=for-the-badge)](https://github.com/ShivamGoyal1899/EcoJourney/releases/download/v1.0.0/EcoJourney.v1.0.0.apk)
+You can get the EcoJourney App up and running on your local dev environment in 5 minutes with these four steps:
 
+1. **Install the Flutter SDK & Android Studio. [Instructions](https://medium.com/enappd/install-flutter-on-windows-and-mac-1fd1dde453ba).**
 
-## Download Android App
-EcoJourney Android App is available [here](https://github.com/ShivamGoyal1899/EcoJourney/releases/download/v1.0.0/EcoJourney.v1.0.0.apk) to download.
+2. **Open Terminal & navigate to the root directory of the project.**
 
-## Tech Stack
-1. Flutter
-2. Firebase
-3. Flask
-4. Google Transit API
+    ```shell
+    cd EcoJourney
+    ```
 
-## Flutter Packages Used
-1. intro_slider: ^2.2.7
-2. font_awesome_flutter: ^8.4.0
-3. firebase_auth: ^0.14.0+2
-4. google_sign_in: ^4.0.6
-5. cloud_firestore: ^0.12.9
-6. flutter_facebook_login: ^2.0.1
-7. http: ^0.12.0+2
-8. autocomplete_textfield: ^1.7.3
-9. flutter_html: ^0.10.4
-10. material_design_icons_flutter: 3.2.4096
-11. camera:
-12. path_provider:
-13. path:
+3. **Run and launch the build on preferred device.**
 
-## Versioning
-I've used [Semantic Versioning 2.0.0](https://semver.org/) for versioning throughout the app.
+   ```shell
+   flutter run
+   ```
 
-## Project Created & Maintained By
+4. **Open the source code and start editing!**
 
-### Shivam Goyal
-Flutter Developer | Network Security | ML Enthusiast | Sophomore | Blogger
+   Your app is now running on your physical device or emulator. Open the `lib` directory in Android Studio itself and edit `*.dart` files. Hot Reload your changes, and the app will update in real time!
 
-<a href="https://shivamgoyal.co"><img src="https://shivamgoyal.co/credits.png" width="60"></a>
-<a href="https://medium.com/@ShivamGoyal1899"><img src="https://github.com/aritraroy/social-icons/blob/master/medium-icon.png?raw=true" width="60"></a>
-<a href="https://twitter.com/ShivamGoyal1899"><img src="https://github.com/aritraroy/social-icons/blob/master/twitter-icon.png?raw=true" width="60"></a>
-<a href="https://linkedin.com/in/ShivamGoyal1899"><img src="https://github.com/aritraroy/social-icons/blob/master/linkedin-icon.png?raw=true" width="60"></a>
-<a href="https://facebook.com/ShivamGoyal1899"><img src="https://github.com/aritraroy/social-icons/blob/master/facebook-icon.png?raw=true" width="60"></a>
-<a href="https://instagram.com/shivamgoyal.co"><img src="https://github.com/aritraroy/social-icons/blob/master/instagram-icon.png?raw=true" width="60"></a>
+At this point, you’ve got the fully functional EcoJourney App running. For additional information on how you can customize your Flutter Apps, see [Google Codelabs](https://codelabs.developers.google.com/codelabs/flutter/) and [HackerNoon Guide](https://hackernoon.com/making-the-most-of-flutter-from-basics-to-customization-433171581d01).
 
-## Main Collaborators - Team RuntimeTerror
+## :ballot_box: Flutter / Dart Packages Used
+|    Package Name    	| Package Version 	|                           Package URL                          	|
+|:------------------:	|:---------------:	|:--------------------------------------------------------------:	|
+|    intro_slider    	|      latest     	|    [Open on pub.dev](https://pub.dev/packages/intro_slider)    	|
+|        http        	|      latest     	|        [Open on pub.dev](https://pub.dev/packages/http)        	|
+|    flutter_html    	|      latest     	|    [Open on pub.dev](https://pub.dev/packages/flutter_html)    	|
+| shared_preferences 	|      latest     	| [Open on pub.dev](https://pub.dev/packages/shared_preferences) 	|
+| permission_handler 	|      latest     	| [Open on pub.dev](https://pub.dev/packages/permission_handler) 	|
+|    url_launcher    	|      latest     	|    [Open on pub.dev](https://pub.dev/packages/url_launcher)    	|
+| speech_recognition 	|      latest     	| [Open on pub.dev](https://pub.dev/packages/speech_recognition) 	|
+|      scratcher     	|      latest     	|      [Open on pub.dev](https://pub.dev/packages/scratcher)     	|
 
-### [Utkarsh Mishra](https://github.com/utkarsh1148) (Thapar Institute)
-### [Jayati Gumber](https://github.com/JayatiGumber) (Thapar Institute)
-### [Prabhav Bansal](https://github.com/p4prabhav) (IIIT Hyderabad)
+## :label: Versioning
+I've used [Semantic Versioning 2.0.0](https://semver.org/) for versioning throughout the project.
 
-## Found this project useful?
+## :question: Queries / Bugs
+If you got any queries or found a bug, open an [Issue](https://github.com/ShivamGoyal1899/EcoJourney/issues/new) or ping me over on [hi@itsshivam.com](mailto:hi@itsshivam.com)
 
-If you found this project useful, then please consider giving it a :star: on Github and sharing it with your friends via social media.
+## :memo: License
+Licensed under the [MIT License](./LICENSE).
 
-## Got any Queries?
-If you got any queries or found a bug create a PR or ping me over on [hi@shivamgoyal.co](mailto:hi@shivamgoyal.co)
+## :purple_heart: Thanks
 
-## Found me generous?
-
-If you learned even a thing or two and want to thank me, consider buying me a drink :beer:
-
-[![Paypal](https://img.shields.io/badge/Sponsor-Paypal-informational?style=for-the-badge&logo=paypal)](https://www.paypal.me/shivamgoyal1899)
-
-## License
-
-```
-MIT License
-
-Copyright (c) 2019 Shivam Goyal
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-```
+Thanks to all contributors and to sponsors for supporting the project.
