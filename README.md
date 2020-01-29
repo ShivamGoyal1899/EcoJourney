@@ -31,7 +31,7 @@ Show some love 💜 and Star ⭐️ the Repository to support the project.
 |:-------------------------------------------------:|:-------------------------------------------------:|:-------------------------------------------------:|
 | <img width="1604" src="./readme/screenshot1.jpg"> | <img width="1604" src="./readme/screenshot2.jpg"> | <img width="1604" src="./readme/screenshot3.jpg"> |
 | <img width="1604" src="./readme/screenshot4.jpg"> | <img width="1604" src="./readme/screenshot5.jpg"> | <img width="1604" src="./readme/screenshot6.jpg"> |
-|                    **App Drawer**                 |                  **Voice Search**                 |                     **Settings**                  |
+|                    **App Drawer**                 |                 **Search Language**               |                     **Settings**                  |
 
 ## What’s In This Document
 
