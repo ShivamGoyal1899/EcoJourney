@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/ShivamGoyal1899/EcoJourney">
-    <img alt="EcoJourney" src="./images/ecoJourney - 3000x1000.png" width="100%" />
+    <img alt="EcoJourney" src="./readme/ecoJourney - 3000x1000.png" width="100%" />
   </a>
 </p>
 <p align="center">
@@ -29,8 +29,8 @@ Show some love 💜 and Star ⭐️ the Repository to support the project.
 
 |                     Home Screen                   |                    Voice Search                   |                       Rewardz                     |
 |:-------------------------------------------------:|:-------------------------------------------------:|:-------------------------------------------------:|
-| <img width="1604" src="./images/screenshot1.jpg"> | <img width="1604" src="./images/screenshot2.jpg"> | <img width="1604" src="./images/screenshot3.jpg"> |
-| <img width="1604" src="./images/screenshot4.jpg"> | <img width="1604" src="./images/screenshot5.jpg"> | <img width="1604" src="./images/screenshot6.jpg"> |
+| <img width="1604" src="./readme/screenshot1.jpg"> | <img width="1604" src="./readme/screenshot2.jpg"> | <img width="1604" src="./readme/screenshot3.jpg"> |
+| <img width="1604" src="./readme/screenshot4.jpg"> | <img width="1604" src="./readme/screenshot5.jpg"> | <img width="1604" src="./readme/screenshot6.jpg"> |
 |                    **App Drawer**                 |                  **Voice Search**                 |                     **Settings**                  |
 
 ## What’s In This Document
