@@ -30,9 +30,9 @@ Show some love 💜 and Star ⭐️ the Repository to support the project.
 ## What’s In This Document
 
 - [Get Up and Running in 5 Minutes](#rocket-get-up-and-running-in-5-minutes)
-- [Flutter / Dart Packages Used](#ballot_box-flutter-dart-packages-used)
+- [Flutter / Dart Packages Used](#ballot_box-flutter--dart-packages-used)
 - [Versioning](#label-versioning)
-- [Queries / Bugs](#question-queries-bugs)
+- [Queries / Bugs](#question--queries-bugs)
 - [License](#memo-license)
 - [Thanks to Contributors and Sponsors](#purple_heart-thanks)
 
